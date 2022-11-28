@@ -194,7 +194,7 @@ def pregunta_06():
     -------------------------------------------------------------------------------------
     """
 
-    # Obtenga el pipeline de la pregunta 3.
+    # Obtenga el pipeline de la pregunta 3
     gridSearchCV = pregunta_04()
 
     # Cargue los datos generados en la pregunta 01.
