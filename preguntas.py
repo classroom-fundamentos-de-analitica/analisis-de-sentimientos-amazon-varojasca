@@ -32,10 +32,10 @@ def pregunta_01():
     )
 
     # Separe los grupos de mensajes etiquetados y no etiquetados.
-    df_tagged = f[df["lbl"].notna()]
+    df_tagged = df[df["lbl"].notna()]
     df_untagged = df[df["lbl"].isna()]
 
-    x_tagged = f_tagged["msg"]
+    x_tagged = df_tagged["msg"]
     y_tagged = df_tagged["lbl"]
 
     x_untagged = df_untagged["msg"]
@@ -78,7 +78,7 @@ def pregunta_03():
     # Importe el stemmer de Porter
     # Importe CountVectorizer
     from nltk.stem.porter import PorterStemmer
-    from sklearn.feature_extraction.text import 
+    from sklearn.feature_extraction.text import CountVectorizer 
 
     # Cree un stemeer que use el algoritmo de Porter.
     stemmer = PorterStemmer()
